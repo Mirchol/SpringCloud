@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <artifactId>thoth-parent</artifactId>
         <groupId>com.prometheus</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
     <artifactId>thoth-robot-ms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-
     <name>thoth-robot-ms</name>
     <description>thoth-robot</description>
-
     <modules>
         <module>thoth-robot-entity</module>
         <module>thoth-robot-service</module>
@@ -36,7 +30,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
     </dependencies>
     <developers>
         <developer>
@@ -45,5 +38,4 @@
             <organization>prometheus</organization>
         </developer>
     </developers>
-
 </project>
