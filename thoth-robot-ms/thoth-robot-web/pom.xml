@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>thoth-robot-ms</artifactId>
         <groupId>com.prometheus</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
-
     <artifactId>thoth-robot-web</artifactId>
     <packaging>jar</packaging>
-
     <name>thoth-robot-web</name>
-
     <properties>
         <start-class>com.prometheus.thoth.RobotApplication</start-class>
-
         <thoth-robot-ms.version>0.0.1-SNAPSHOT</thoth-robot-ms.version>
         <mysql.version>5.1.41</mysql.version>
         <thoth-robot.version>0.0.1-SNAPSHOT</thoth-robot.version>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -30,6 +23,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
         </dependency>
         <dependency>
             <groupId>com.prometheus</groupId>
@@ -51,13 +45,11 @@
             <artifactId>thoth-robot-common</artifactId>
             <version>${thoth-robot.version}</version>
         </dependency>
-
         <dependency>
             <groupId>com.prometheus</groupId>
             <artifactId>thoth-fastdfs</artifactId>
             <version>${thoth-robot.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -68,7 +60,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j2</artifactId>
@@ -87,5 +78,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
