@@ -1,10 +1,7 @@
 package com.prometheus.thoth.data.kafka.config;
 
-import com.alibaba.fastjson.JSON;
-import com.prometheus.thoth.common.util.StringUtils;
-import com.prometheus.thoth.data.kafka.partitioner.SimplePartitioner;
-import com.prometheus.thoth.data.kafka.producer.KafkaProducer;
-import com.google.common.collect.Maps;
+import java.util.Map;
+
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.slf4j.Logger;
@@ -17,8 +14,11 @@ import org.springframework.kafka.core.DefaultKafkaProducerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
 
-import java.io.Serializable;
-import java.util.Map;
+import com.alibaba.fastjson.JSON;
+import com.google.common.collect.Maps;
+import com.prometheus.thoth.common.util.StringUtils;
+import com.prometheus.thoth.data.kafka.partitioner.SimplePartitioner;
+import com.prometheus.thoth.data.kafka.producer.KafkaProducer;
 
 /**
  * Created by liangliang on 2017/03/18.

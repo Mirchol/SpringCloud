@@ -12,7 +12,14 @@
     <artifactId>thoth-data-kafka-consumer</artifactId>
     <packaging>jar</packaging>
 
-    <name>thoth-data-kafka-consumer</name>
-
+<name>thoth-data-kafka-consumer</name>
+<dependencies>
+    <dependency>
+        <groupId>javax.annotation</groupId>
+        <artifactId>javax.annotation-api</artifactId>
+        <version>1.3.2</version>
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
 
 </project>
